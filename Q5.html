@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+    <style>
+      body {
+        background-color: black;
+        color: aqua;
+      }
+      h2 {
+        text-align: center;
+      }
+      .container{
+        width: 600px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 100px;
+        gap: 25px;
+        border: 3px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Convert a given number from decimal to binary or hexadecimal</h2>
+    <div class="container">
+      <label for="decimal">Decimal</label><br />
+      <input
+        type="text"
+        class="decimal"
+        style="
+          background-color: burlywood;
+          border: 2px groove green;
+          height: 100px;
+          width: 100px;
+        "
+      /><br />
+      <label for="binary">Binary</label><br />
+      <div
+        class="binary"
+        style="
+          height: 100px;
+          width: 100px;
+          background-color: red;
+          color: aliceblue;
+          border: 2px groove red;
+        "
+      ></div>
+    </div>
+    <script>
+      const decimal = document.getElementsByClassName("decimal")[0];
+      const binary = document.getElementsByClassName("binary")[0];
+      decimal.addEventListener('input',()=>{
+        let bin = decimal.value;
+        bin = parseInt(bin).toString(2);
+        binary.innerHTML= bin;
+      })
+    </script>
+  </body>
+</html>

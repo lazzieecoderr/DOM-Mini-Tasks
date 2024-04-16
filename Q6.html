@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+    <style>
+        body{
+            background-color: black;
+            color: aqua;
+        }
+        h2{
+            text-align: center;
+        }
+        form{
+          margin: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>With Javascript write a simple from validation</h2>
+    <form action="#" class="myform">
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email" placeholder="Enter your email">
+      <br>
+      <label for="password">Password</label><br>
+      <input type="password" name="password" id="password" placeholder="Enter your password"><br>
+      <button type="submit">Submit</button><br>
+      <span id="error" style="color: red;"></span>
+    </form>
+    <script>
+      document.getElementsByClassName("myform")[0].addEventListener("submit",(event)=>{
+          event.preventDefault();
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+          if(email==="" || password===""){
+            document.getElementById("error").innerText="Please enter the email and password"
+          }
+          else{
+            document.getElementById("error").innerText=""
+            alert("Form Submitted Successfully")
+          }
+      })
+    </script>
+  </body>
+</html>

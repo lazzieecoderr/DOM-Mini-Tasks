@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      body {
+        background-color: black;
+        color: aqua;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        border: 2px solid whitesmoke;
+        margin-top: 150px;
+        margin-left: 600px;
+      }
+      h4 {
+        text-align: center;
+        margin-top: 80px;
+        color: aliceblue;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Color a span/div element content when a user moves the mouse over the
+      element.
+    </h1>
+    <div id="color">
+      <h4>Change my Color</h4>
+    </div>
+    <script>
+      //! Color a span/div element content when a user moves the mouse over the element.
+      const color = document.getElementById("color");
+      color.addEventListener(
+        "mouseover",
+        () => (color.style.backgroundColor = "red")
+      );
+      color.addEventListener(
+        "mouseleave",
+        () => (color.style.backgroundColor = "black")
+      );
+    </script>
+  </body>
+</html>

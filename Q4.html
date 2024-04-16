@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+    <style>
+        body{
+            background-color: black;
+            color: aqua;
+        }
+        h2{
+            text-align: center;
+        }
+        textarea{
+          margin-left: 600px;
+          margin-top: 180px;
+        }
+        span{
+          margin: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>Write a Javascript code for character counts in the textarea.</h2>
+    <div>
+      <textarea name="Input Area" id="textarea" cols="30" rows="10"></textarea>
+      <span id="span"></span>
+    </div>
+    <script>
+       const textarea = document.getElementById("textarea");
+       textarea.addEventListener("input",(element)=>{
+        document.getElementById("span").innerText = `characters in the textarea is ${element.target.value.length}`
+       })
+    </script>
+  </body>
+</html>
