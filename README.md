@@ -5,7 +5,7 @@ Color a span/div element content when a user moves the mouse over the element.
 
 Use prompt to read a value from user and display it in the span element.
 
-Display the mouse X and Y coordinates in a <span> tag when you click on a <h1> tag which contains a paragraph.
+Display the mouse X and Y coordinates in a "span" tag when you click on a "h1" tag which contains a paragraph.
 
 Write a Javascript code for character counts in the textarea.
 
