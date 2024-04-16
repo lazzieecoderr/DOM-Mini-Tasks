@@ -1,0 +1,17 @@
+const/var/let variablename = document.createElement("")
+variable.setAttribute("" , "")
+variablename.classlist.add("","")
+variablename.id=""
+variablename.innerHTML/innerText/textContent = ''
+append /appendchild
+
+getelementbyid
+classname
+tagname
+queryselector()
+queryselectorall
+
+events
+alert,prompt,confirm
+function
+settimeout vs setinterval
