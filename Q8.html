@@ -20,6 +20,17 @@
       Pressed, but when user press spacebar show an alert Thank You..!! and
       close the current window.
     </h2>
-    <script></script>
+    <script>
+      document.addEventListener("keypress",(event)=>{
+           let key = event.key;
+           if(key === " "){
+            alert("Thank you!")
+            window.close();
+           }
+           else{
+               alert("Invalid Key Pressed")
+           }
+      })
+    </script>
   </body>
 </html>

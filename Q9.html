@@ -19,6 +19,16 @@
         When a cursor is moved over an content, allow the user to edit the content in HTML page.
         NOTE: Input element should not be used
     </h2>
-    <script></script>
+    <div style=" height: 600px; width:600px;">
+       <div id="edit" style="background-color: lightpink; height: 400px; width: 400px; font-size: xx-large; color: black;"></div>
+    </div>
+    <script>
+      const div = document.getElementById("edit");
+      div.addEventListener("mouseover",()=>{
+        div.setAttribute("contenteditable","true");
+      })
+      div.innerHTML = "<strong> Mouseover to edit the content </strong>"
+
+    </script>
   </body>
 </html>
